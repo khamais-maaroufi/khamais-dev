@@ -1,0 +1,124 @@
+.hero-container {
+  width: 98vw;
+  margin: auto;
+  height: 75vh;
+  position: relative;
+  margin-top: 5vh;
+}
+@media (max-width: 800px) {
+  .hero-container {
+    margin-top: 10vh;
+  }
+}
+
+.hero-glass {
+  width: 50%;
+  height: 40%;
+  padding: 2%;
+  position: absolute;
+  top: 7vh;
+  left: 30vw;
+  -webkit-animation: slide-in-elliptic-top-fwd 3s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+
+.hero-glass > h1 {
+  font-size: 400%;
+}
+
+.photo-conatiner {
+  position: absolute;
+  background: var(--accent);
+  bottom: 20%;
+  left: 2%;
+  width: 22%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-conatiner > img {
+  width: 95%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 1200px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hero-glass {
+    width: fit-content;
+    height: fit-content;
+    position: initial;
+    top: revert;
+    left: revert;
+    margin-top: 5%;
+  }
+  .hero-glass > h1 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 511px) {
+  .hero-glass {
+    width: fit-content;
+    height: fit-content;
+    position: initial;
+    top: revert;
+    left: revert;
+    margin-top: 20%;
+    margin-left: 15%;
+  }
+  .hero-glass > h1 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 0.8rem;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}

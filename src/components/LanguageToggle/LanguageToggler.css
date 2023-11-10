@@ -1,0 +1,47 @@
+.custom-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white; /* Changed from border-bottom to border-top */
+  margin-right: 10px;
+  transition: transform 1s ease;
+  transform-origin: center;
+}
+.custom-select-Menu-Container {
+  position: relative;
+  overflow: visible;
+  height: 30px;
+  cursor: pointer;
+}
+.custom-selectMenu {
+  width: 85px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.langOption {
+  z-index: 1000;
+}
+.animate {
+  animation: rotate180 0.3s ease forwards;
+}
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.custom-select-Menu {
+  padding: 1%;
+  width: 85px;
+  background-color: var(--nav-footer);
+  transition: all 1s ease;
+}
+.langOption:hover {
+  background-color: var(--background-color);
+}
