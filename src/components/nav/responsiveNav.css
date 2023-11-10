@@ -1,7 +1,7 @@
 .burger-conatiner {
-  position: absolute;
+  position: fixed;
   top: 5%;
-  right: 1%;
+  right: 2%;
   z-index: 100;
 }
 .burger {

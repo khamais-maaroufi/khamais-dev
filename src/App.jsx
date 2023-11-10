@@ -7,6 +7,7 @@ import "./App.css";
 import LanguageContext from "./context/LanguageContext";
 import { useEffect } from "react";
 import Loading from "./components/Loading/Loading";
+import Introduction from "./sections/introduction/Introduction";
 function App() {
   const [language, setLanguage] = useState(Languages.ENGLISH);
 
@@ -41,7 +42,7 @@ function App() {
       <div style={{ paddingTop: "5%" }}>
         <NavBar />
         <Hero />
-
+        <Introduction />
         <Footer />
       </div>
     </LanguageContext.Provider>

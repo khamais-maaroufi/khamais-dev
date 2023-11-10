@@ -15,9 +15,13 @@ const Hero = () => {
       <div className="circle circle-very-large vibrate-1"></div>
       <div className="hero-glass glass">
         {language === Languages.ENGLISH ? (
-          <h1 className="gradient-text">Khamais Maaroufi</h1>
+          <h1 className="heading-one" style={{ textAlign: "center" }}>
+            Khamais Maaroufi
+          </h1>
         ) : (
-          <h1 className="gradient-text">Maaroufi Khamais </h1>
+          <h1 className="heading-one" style={{ textAlign: "center" }}>
+            Maaroufi Khamais{" "}
+          </h1>
         )}
         <div>
           {language === Languages.ENGLISH ? (

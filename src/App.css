@@ -4,9 +4,8 @@ body {
   --background-color: #e8e8e8;
   --primary: black; /*the color that appear against the background color*/
   --glass-text: white;
-  --nav-footer: #c5c2c2b6;
   --shadowing: #5ffbf1;
-  --glass-color: rgba(41, 39, 39, 0.35);
+
   --accent: linear-gradient(
     to right,
     #d16ba5,
@@ -48,6 +47,13 @@ body {
   margin: 0;
   box-sizing: border-box;
   transition: background-color 1s ease;
+}
+
+/*headings here*/
+
+.heading-one {
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .circle {
@@ -109,11 +115,10 @@ body {
 }
 
 .glass {
-  background: rgba(209, 209, 209, 0.25);
+  background: rgba(44, 43, 43, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -128,6 +133,11 @@ body {
   -moz-text-fill-color: transparent;
 }
 
+.paragraph {
+  width: 70vw;
+  margin-top: 2%;
+  font-size: 1.3rem;
+}
 /**
  * ----------------------------------------
  * animation vibrate-1

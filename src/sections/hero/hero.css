@@ -12,21 +12,26 @@
 }
 
 .hero-glass {
-  width: 50%;
-  height: 40%;
+  border-radius: 100%;
+  width: 40vw;
+  aspect-ratio: 1/1;
   padding: 2%;
   position: absolute;
-  top: 7vh;
+  top: 3.5vh;
   left: 30vw;
   -webkit-animation: slide-in-elliptic-top-fwd 3s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-glass > h1 {
+/* .hero-glass > h1 {
   font-size: 400%;
-}
+} */
 
 .photo-conatiner {
   position: absolute;

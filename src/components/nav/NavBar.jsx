@@ -25,7 +25,7 @@ const NavBar = () => {
   return (
     <>
       {screenWidth > 1100 ? (
-        <div className="navbar-container">
+        <div className="navbar-container glass">
           <a className="logo-container" href="/">
             <img src={logo} alt="khamais-maaroufi-logo" />
           </a>
