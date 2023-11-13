@@ -36,7 +36,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
     AOS.init({
-      duration: 2000,
+      duration: 4000,
     });
   }, []);
   if (loading) {
