@@ -12,6 +12,7 @@ import Loading from "./components/Loading/Loading";
 import Introduction from "./sections/introduction/Introduction";
 import Experinece from "./sections/experience/Experinece";
 import Certification from "./sections/certifications/Certification";
+import Skills from "./sections/skills/Skills";
 function App() {
   const [language, setLanguage] = useState(Languages.ENGLISH);
 
@@ -52,6 +53,7 @@ function App() {
         <Introduction />
         <Experinece />
         <Certification />
+        <Skills />
         <Footer />
       </div>
     </LanguageContext.Provider>

@@ -126,6 +126,19 @@ body {
     inset 2vh 0 20vh #f0f, inset -2vh 0 20vh #0ff, 0 0 6vh #fff,
     -1vh 0 10vh #f0f, 1vh 0 10vh #0ff;
 }
+.circle-center {
+  z-index: 100;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10vh;
+  height: 10vh;
+  box-shadow: inset 0 0 3vh #fff, inset 1vh 0 5vh #f0f, inset -1vh 0 5vh #0ff,
+    inset 1vh 0 10vh #f0f, inset -1vh 0 10vh #0ff, 0 0 3vh #fff,
+    -0.5vh 0 5vh #f0f, 0.5vh 0 5vh #0ff;
+}
 
 .gradient-text {
   background-color: var(--primary);
