@@ -6,6 +6,7 @@ function Skills() {
     <section
       className="section-container gradient-text"
       style={{ marginTop: "20vh" }}
+      id="skills"
     >
       <h1 data-aos="fade-up" className="heading-one">
         Skills
