@@ -145,6 +145,7 @@ body {
 }
 .section-container {
   padding-left: 5%;
+  position: relative;
 }
 /**
  * ----------------------------------------

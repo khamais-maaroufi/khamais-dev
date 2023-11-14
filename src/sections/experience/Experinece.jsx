@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./experience.css";
 import LanguageContext from "../../context/LanguageContext";
-import "aos/dist/aos.css";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -15,7 +15,7 @@ import experienceData from "./experineceData";
 const Experinece = () => {
   const { language } = useContext(LanguageContext);
   return (
-    <section className="section-container ">
+    <section className="section-container " id="experience">
       <h1 data-aos="fade-up" className="gradient-text heading-one">
         Experience
       </h1>

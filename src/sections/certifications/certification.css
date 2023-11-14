@@ -1,0 +1,116 @@
+.certification-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.certification-card {
+  z-index: 100;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  margin: 2%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.certification-card > figure {
+  width: 90%;
+  height: 80%;
+  overflow: hidden;
+}
+.certification-card img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: kenburns-top 5s ease-out infinite alternate both;
+  animation: kenburns-top 5s ease-out infinite alternate both;
+}
+.redirect-to-certificate {
+  position: absolute;
+  bottom: 20%;
+  left: 27%;
+  text-decoration: none;
+  cursor: pointer;
+  /* transform: translate(-50%, -50%); */
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: var(--accent);
+  background-size: 400%;
+  border-radius: 30px;
+}
+.redirect-to-certificate:hover {
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.redirect-to-certificate:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: var(--accent);
+  background-size: 100%;
+  border-radius: 40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.redirect-to-certificate:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 2s linear infinite;
+}
+
+/**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}

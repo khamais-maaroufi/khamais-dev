@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import Loading from "./components/Loading/Loading";
 import Introduction from "./sections/introduction/Introduction";
 import Experinece from "./sections/experience/Experinece";
+import Certification from "./sections/certifications/Certification";
 function App() {
   const [language, setLanguage] = useState(Languages.ENGLISH);
 
@@ -34,9 +35,9 @@ function App() {
 
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
+    setTimeout(() => setLoading(false), 4000);
     AOS.init({
-      duration: 4000,
+      duration: 2000,
     });
   }, []);
   if (loading) {
@@ -50,6 +51,7 @@ function App() {
         <Hero />
         <Introduction />
         <Experinece />
+        <Certification />
         <Footer />
       </div>
     </LanguageContext.Provider>
