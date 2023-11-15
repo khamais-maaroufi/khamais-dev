@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./GlassCard.css";
-
-export const GlassCard = () => {
+import LanguageContext from "../../context/LanguageContext";
+import eye from "../../assets/eye.png";
+import github from "../../assets/github.png";
+export const GlassCard = (props) => {
+  const { language } = useContext(LanguageContext);
   return (
-    <div className="box">
+    <div data-aos="zoom-out" className="box">
       <span></span>
       <div className="content">
-        <h2>Khamais Maaoufi</h2>
+        <div className="placeholder"></div>
+        <figure>
+          <img
+            src={props.project.imageUrl}
+            alt={props.project.title[language]}
+          />
+        </figure>
+        <h2>{props.project.title[language]}</h2>
+        <p>{props.project.desc[language]}</p>
+        <div className="icons-container">
+          <a href={props.project.githubUrl} target="_blank">
+            <img src={github} />
+          </a>
+          <a href={props.project.demoUrl} target="_blank">
+            <img src={eye} />
+          </a>
+        </div>
       </div>
     </div>
   );
