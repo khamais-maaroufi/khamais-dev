@@ -1,6 +1,13 @@
 import React from "react";
 import "./skills.css";
 import java from "../../assets/tech/java.png";
+import node from "../../assets/tech/nodejs.png";
+import spring from "../../assets/tech/spring.png";
+import sql from "../../assets/tech/sql.png";
+import git from "../../assets/tech/git.png";
+import docker from "../../assets/tech/docker.png";
+import mongodb from "../../assets/tech/mongodb.png";
+import react from "../../assets/tech/reactjs.png";
 function Skills() {
   return (
     <section
@@ -18,28 +25,28 @@ function Skills() {
             <img src={java} alt="java" />
           </div>
           <div class="skill deg-45">
-            <img src={java} alt="java" />
+            <img src={spring} alt="spring" />
           </div>
 
           <div class="skill deg-90">
-            <img src={java} alt="java" />
+            <img src={sql} alt="sql" />
           </div>
           <div class="skill deg-135">
-            <img src={java} alt="java" />
+            <img src={git} alt="git" />
           </div>
 
           <div class="skill deg-180">
-            <img src={java} alt="java" />
+            <img src={docker} alt="docker" />
           </div>
           <div class="skill deg-225">
-            <img src={java} alt="java" />
+            <img src={node} alt="node" />
           </div>
 
           <div class="skill deg-270">
-            <img src={java} alt="java" />
+            <img src={react} alt="react" />
           </div>
           <div class="skill deg-315">
-            <img src={java} alt="java" />
+            <img src={mongodb} alt="mongodb" />
           </div>
         </div>
       </div>
