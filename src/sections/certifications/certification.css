@@ -27,6 +27,8 @@
 .certification-card img {
   width: 100%;
   height: 100%;
+}
+.certification-card:hover img {
   -webkit-animation: kenburns-top 5s ease-out infinite alternate both;
   animation: kenburns-top 5s ease-out infinite alternate both;
 }
@@ -37,7 +39,7 @@
   text-decoration: none;
   cursor: pointer;
   /* transform: translate(-50%, -50%); */
-  width: 200px;
+  width: 220px;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -50,9 +52,9 @@
   border-radius: 30px;
 }
 .redirect-to-certificate:hover {
-  animation: animate 6s linear infinite;
+  animation: animato 6s linear infinite;
 }
-@keyframes animate {
+@keyframes animato {
   0% {
     background-position: 0%;
   }
