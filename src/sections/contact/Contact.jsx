@@ -3,6 +3,13 @@ import "./contact.css";
 import LanguageContext from "../../context/LanguageContext";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import logo from "../../assets/logo.png";
+import fb from "../../assets/links/fb.png";
+import lc from "../../assets/links/lc.png";
+import github from "../../assets/github.png";
+import map from "../../assets/map.png";
+import gmail from "../../assets/gmail.png";
+import phone from "../../assets/phone.png";
 const Contact = () => {
   const { language } = useContext(LanguageContext);
 
@@ -84,7 +91,7 @@ const Contact = () => {
       <h1 data-aos="fade-up" className="gradient-text heading-one">
         Contact
       </h1>
-      <div className="form-container glass">
+      <div data-aos="zoom-out" className="form-container glass">
         <form ref={formRef} onSubmit={handleSubmit}>
           {loading ? (
             <div class="loader">
@@ -145,7 +152,35 @@ const Contact = () => {
           )}
         </form>
         <div className="vertical-line"></div>
-        <div className="contacts"></div>
+        <div className="contacts">
+          <img src={logo} alt="khamais" className="Mylogo" />
+          <div className="links">
+            <a href="https://www.facebook.com/kmis.kmas" target="_blank">
+              <img src={fb} alt="fb" />
+            </a>
+            <a href="https://github.com/khamais-maaroufi" target="_blank">
+              <img src={github} alt="github" />
+            </a>
+            <a href="https://leetcode.com/Khamais/" target="_blank">
+              <img src={lc} alt="leetcode" />
+            </a>
+          </div>
+          <div className="h-liner"></div>
+          <address>
+            <div>
+              <img src={map} />{" "}
+              <span>
+                {language === "English" ? "Tunis, Tunisia" : "Tunis, Tunisie"}
+              </span>
+            </div>
+            <div>
+              <img src={phone} /> <span>25883997</span>
+            </div>
+            <div>
+              <img src={gmail} /> <span>khamais.sil@gmail.com</span>
+            </div>
+          </address>
+        </div>
       </div>
       <div data-aos="fade-up-right" className="cube">
         <div id="shape">
