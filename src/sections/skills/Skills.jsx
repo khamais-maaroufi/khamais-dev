@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./skills.css";
 import java from "../../assets/tech/java.png";
 import node from "../../assets/tech/nodejs.png";
@@ -8,7 +8,10 @@ import git from "../../assets/tech/git.png";
 import docker from "../../assets/tech/docker.png";
 import mongodb from "../../assets/tech/mongodb.png";
 import react from "../../assets/tech/reactjs.png";
+import LanguageContext from "../../context/LanguageContext";
+
 function Skills() {
+  const { language } = useContext(LanguageContext);
   return (
     <section
       className="section-container gradient-text"
@@ -16,7 +19,7 @@ function Skills() {
       id="skills"
     >
       <h1 data-aos="fade-up" className="heading-one">
-        Skills
+        {language === "English" ? "Skills" : "Compétences"}
       </h1>
       <div className="bg-for-bigcircle" data-aos="fade-up">
         <div className="circle-center vibrate-1"></div>
