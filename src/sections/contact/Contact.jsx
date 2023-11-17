@@ -92,9 +92,9 @@ const Contact = () => {
         Contact
       </h1>
       <div data-aos="zoom-out" className="form-container glass">
-        <form ref={formRef} onSubmit={handleSubmit}>
+        <form name="contact-me" ref={formRef} onSubmit={handleSubmit}>
           {loading ? (
-            <div class="loader">
+            <div className="loader">
               <span></span>
               <span></span>
               <span></span>
@@ -184,22 +184,22 @@ const Contact = () => {
       </div>
       <div data-aos="fade-up-right" className="cube">
         <div id="shape">
-          <div class="front"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="back"></div>
+          <div className="front"></div>
+          <div className="left"></div>
+          <div className="right"></div>
+          <div className="top"></div>
+          <div className="bottom"></div>
+          <div className="back"></div>
         </div>
       </div>
       <div data-aos="fade-up-right" className="secondcube">
         <div id="shape">
-          <div class="front"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="back"></div>
+          <div className="front"></div>
+          <div className="left"></div>
+          <div className="right"></div>
+          <div className="top"></div>
+          <div className="bottom"></div>
+          <div className="back"></div>
         </div>
       </div>
     </section>

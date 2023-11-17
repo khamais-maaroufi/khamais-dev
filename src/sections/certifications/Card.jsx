@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    <div data-aos="slide-left" className="certification-card glass">
+    <div data-aos="slide-up" className="certification-card glass">
       <figure>
         <img src={props.image} alt={props.alt} />
       </figure>

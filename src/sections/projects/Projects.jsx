@@ -6,11 +6,7 @@ import { GlassCard } from "../../components/GlassCard/GlassCard";
 const Projects = () => {
   const { language } = useContext(LanguageContext);
   return (
-    <section
-      id="projects"
-      className="section-container "
-      style={{ marginTop: "20vh" }}
-    >
+    <section className="section-container " style={{ marginTop: "20vh" }}>
       <h1 data-aos="fade-up" className="heading-one gradient-text">
         {" "}
         {projectsData.title[language]}
@@ -19,8 +15,8 @@ const Projects = () => {
         {projectsData.description[language]}
       </p>
       <div className="projects-cards-container">
-        {projectsData.projects.map((item) => {
-          return <GlassCard project={item} />;
+        {projectsData.projects.map((item, index) => {
+          return <GlassCard project={item} index={index} />;
         })}
       </div>
     </section>

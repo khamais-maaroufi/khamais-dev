@@ -5,8 +5,9 @@ import eye from "../../assets/eye.png";
 import github from "../../assets/github.png";
 export const GlassCard = (props) => {
   const { language } = useContext(LanguageContext);
+
   return (
-    <div data-aos="zoom-out" className="box">
+    <div data-aos="zoom-out" className="box" key={props.index}>
       <span></span>
       <div className="content">
         <div className="placeholder"></div>

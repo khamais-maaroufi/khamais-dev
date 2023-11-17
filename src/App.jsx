@@ -53,13 +53,21 @@ function App() {
     <LanguageContext.Provider value={{ language, languageUpdater }}>
       <div style={{ paddingTop: "5%" }}>
         <NavBar />
+
         <Hero />
+        <div className="anchor" id="about"></div>
         <Introduction />
+        <div className="anchor" id="experience"></div>
         <Experinece />
+        <div className="anchor" id="certifications"></div>
         <Certification />
+        <div className="anchor" id="skills"></div>
         <Skills />
+        <div className="anchor" id="projects"></div>
         <Projects />
+
         <Contact />
+
         <Footer />
       </div>
       <ToastContainer />

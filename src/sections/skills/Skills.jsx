@@ -11,44 +11,45 @@ import react from "../../assets/tech/reactjs.png";
 import LanguageContext from "../../context/LanguageContext";
 
 function Skills() {
+  const data = { English: "Skills", Français: "Compétences" };
+
   const { language } = useContext(LanguageContext);
   return (
     <section
       className="section-container gradient-text"
       style={{ marginTop: "20vh" }}
-      id="skills"
     >
-      <h1 data-aos="fade-up" className="heading-one">
-        {language === "English" ? "Skills" : "Compétences"}
+      <h1 className="heading-one" style={{ marginBottom: "5vh" }}>
+        {data[language]}
       </h1>
       <div className="bg-for-bigcircle" data-aos="fade-up">
         <div className="circle-center vibrate-1"></div>
-        <div class="circle-wrapper">
-          <div class="skill deg-0">
+        <div className="circle-wrapper">
+          <div className="skill deg-0">
             <img src={java} alt="java" />
           </div>
-          <div class="skill deg-45">
+          <div className="skill deg-45">
             <img src={spring} alt="spring" />
           </div>
 
-          <div class="skill deg-90">
+          <div className="skill deg-90">
             <img src={sql} alt="sql" />
           </div>
-          <div class="skill deg-135">
+          <div className="skill deg-135">
             <img src={git} alt="git" />
           </div>
 
-          <div class="skill deg-180">
+          <div className="skill deg-180">
             <img src={docker} alt="docker" />
           </div>
-          <div class="skill deg-225">
+          <div className="skill deg-225">
             <img src={node} alt="node" />
           </div>
 
-          <div class="skill deg-270">
+          <div className="skill deg-270">
             <img src={react} alt="react" />
           </div>
-          <div class="skill deg-315">
+          <div className="skill deg-315">
             <img src={mongodb} alt="mongodb" />
           </div>
         </div>

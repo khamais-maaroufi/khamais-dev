@@ -1,7 +1,9 @@
 .introduction-conatiner {
-  height: 75vh;
+  height: 90vh;
   padding-left: 5%;
-  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #about {
   position: relative;

@@ -2,7 +2,7 @@
 
 body {
   --background-color: #e8e8e8;
-  --primary: black; /*the color that appear against the background color*/
+  --primary: black;
   --shadowing: #5ffbf1;
   --glass-bg: rgba(148, 139, 139, 0.5);
   --glass-box-shadow: rgba(111, 112, 114, 0.37);
@@ -39,6 +39,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,6 +54,14 @@ body {
   margin: 0;
   box-sizing: border-box;
   transition: background-color 1s ease;
+  overflow-x: hidden;
+}
+
+.anchor {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  margin-bottom: 5vh;
 }
 
 .glass {
@@ -65,7 +74,7 @@ body {
 /*headings here*/
 
 .heading-one {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
@@ -159,6 +168,16 @@ body {
 .section-container {
   padding-left: 5%;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .heading-one {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
 }
 
 /**

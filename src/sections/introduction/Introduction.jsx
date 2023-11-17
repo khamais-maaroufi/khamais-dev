@@ -8,7 +8,7 @@ const Introduction = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <section id="about" className="introduction-conatiner">
+    <section className="introduction-conatiner">
       <div className="circle circle-very-small vibrate-1"></div>
       <h1 data-aos="fade-up" className="gradient-text heading-one">
         Introduction

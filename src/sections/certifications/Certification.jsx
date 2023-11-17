@@ -8,11 +8,7 @@ const Certification = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <section
-      className=" section-container"
-      style={{ marginTop: "20vh" }}
-      id="certifications"
-    >
+    <section className=" section-container" style={{ marginTop: "20vh" }}>
       <h1 data-aos="fade-up" className="heading-one  gradient-text">
         Certifications
       </h1>

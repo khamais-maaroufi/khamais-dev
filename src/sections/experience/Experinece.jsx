@@ -15,8 +15,12 @@ import experienceData from "./experineceData";
 const Experinece = () => {
   const { language } = useContext(LanguageContext);
   return (
-    <section className="section-container " id="experience">
-      <h1 data-aos="fade-up" className="gradient-text heading-one">
+    <section className="section-container " style={{ marginTop: "15vh" }}>
+      <h1
+        data-aos="fade-up"
+        className="gradient-text heading-one"
+        style={{ marginBottom: "5vh" }}
+      >
         Experience
       </h1>
       <VerticalTimeline>
