@@ -86,9 +86,18 @@ const Contact = () => {
     <section
       id="contact"
       className="section-container"
-      style={{ marginTop: "20vh", height: "80vh" }}
+      style={{
+        marginTop: "20vh",
+        height: "80vh",
+        marginBottom: "40vh",
+        paddingTop: "10vh",
+      }}
     >
-      <h1 data-aos="fade-up" className="gradient-text heading-one">
+      <h1
+        data-aos="fade-up"
+        className="gradient-text heading-one"
+        style={{ marginBottom: "10vh" }}
+      >
         Contact
       </h1>
       <div data-aos="zoom-out" className="form-container glass">
@@ -147,7 +156,7 @@ const Contact = () => {
                     : "Écrire un message..."
                 }
               />
-              <button>Submit</button>
+              <button>{language === "English" ? "Submit" : "Envoyer"}</button>
             </>
           )}
         </form>

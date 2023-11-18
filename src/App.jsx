@@ -53,7 +53,6 @@ function App() {
     <LanguageContext.Provider value={{ language, languageUpdater }}>
       <div style={{ paddingTop: "5%" }}>
         <NavBar />
-
         <Hero />
         <div className="anchor" id="about"></div>
         <Introduction />
