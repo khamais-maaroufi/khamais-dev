@@ -17,9 +17,13 @@ function Skills() {
   return (
     <section
       className="section-container gradient-text"
-      style={{ marginTop: "20vh" }}
+      style={{ marginTop: "10vh" }}
     >
-      <h1 className="heading-one" style={{ marginBottom: "5vh" }}>
+      <h1
+        data-aos="fade-up"
+        className="heading-one"
+        style={{ marginBottom: "3vh" }}
+      >
         {data[language]}
       </h1>
       <div className="bg-for-bigcircle" data-aos="fade-up">
