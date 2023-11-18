@@ -156,7 +156,7 @@ const Contact = () => {
                     : "Écrire un message..."
                 }
               />
-              <button>{language === "English" ? "Submit" : "Envoyer"}</button>
+              <button>{language === "English" ? "Send" : "Envoyer"}</button>
             </>
           )}
         </form>
