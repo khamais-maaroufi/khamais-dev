@@ -3,7 +3,7 @@ import "./hero.css";
 import { useContext } from "react";
 import Languages from "../../data/Languages";
 import LanguageContext from "../../context/LanguageContext";
-import photo from "../../assets/Khamais_maaroufi.jpg";
+import photo from "../../assets/me.jpg";
 const Hero = () => {
   const { language } = useContext(LanguageContext);
   return (
