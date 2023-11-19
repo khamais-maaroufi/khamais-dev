@@ -159,6 +159,10 @@
   box-shadow: 0 0 20px 0px #41dfff;
   border-radius: 3px;
 }
+.secondcube #shape div {
+  border: 3px solid #d16ba5;
+  box-shadow: 0 0 20px 0px #d16ba5;
+}
 #shape div.front {
   transform: translateZ(calc(-5vw - 5vh));
 }
