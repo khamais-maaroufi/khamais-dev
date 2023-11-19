@@ -96,7 +96,7 @@ const Contact = () => {
       <h1
         data-aos="fade-up"
         className="gradient-text heading-one"
-        style={{ marginBottom: "10vh" }}
+        style={{ marginBottom: "5vh" }}
       >
         Contact
       </h1>
