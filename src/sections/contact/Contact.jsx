@@ -164,7 +164,10 @@ const Contact = () => {
         <div className="contacts">
           <img src={logo} alt="khamais" className="Mylogo" />
           <div className="links">
-            <a href="https://www.facebook.com/kmis.kmas" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/khamais-maaroufi/"
+              target="_blank"
+            >
               <img src={fb} alt="fb" />
             </a>
             <a href="https://github.com/khamais-maaroufi" target="_blank">
