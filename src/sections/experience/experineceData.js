@@ -25,10 +25,8 @@ const experienceData = {
       Français: "Horizon Data, Tunis",
     },
     description: {
-      English:
-        "I worked on the development of a web application for an Education Management System (LMS).",
-      Français:
-        "J'ai travaillé sur le développement d'une application web pour un système de gestion de l'éducation(LMS).",
+      English: "I worked on the development of a web application.",
+      Français: "J'ai travaillé sur le développement d'une application web.",
     },
   },
   fenix: {
