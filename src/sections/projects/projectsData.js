@@ -13,6 +13,25 @@ const projectsData = {
     /*  */
     {
       imageUrl:
+        "https://firebasestorage.googleapis.com/v0/b/my-picture-829e6.appspot.com/o/MaWebSite.PNG?alt=media&token=d9442bc8-393b-4d6b-a94d-f0268387db97",
+      githubUrl: "https://github.com/khamais-maaroufi/khamais-dev",
+      demoUrl: "https://khemais-maaroufi.onrender.com",
+      title: {
+        English: "My website",
+        Français: "Mon siteweb ",
+      },
+      desc: {
+        English:
+          "Curious how I made this website tick? ️ Dive into the source code on GitHub and see how I organized it for long-term maintainability.",
+        Français:
+          "Plongez dans le code source sur GitHub et découvrez comment je l'ai organisé pour une maintenance à long terme.",
+      },
+    },
+    /*  */
+    /*  */
+
+    {
+      imageUrl:
         "https://firebasestorage.googleapis.com/v0/b/my-picture-829e6.appspot.com/o/erp.png?alt=media&token=ffa1ca42-c317-4bbf-9bcc-7d918a4dde43",
       githubUrl: "https://github.com/khamais-maaroufi/MERN-DASHBORAD",
       demoUrl: "https://ecomvision-tnbe.onrender.com",
